@@ -2,12 +2,12 @@
 Resource          Resources_Config.robot
 
 *** Variables ***
-&{uatEnvConfig}    baseUrlApp=https://uat.357951.xyz    addressUrlApp=https://address.uat.357951.xyz    # \ UAT环境
-&{APP_user_one}    userMobile=15911132176    userPassword=Abcd1234    # app用户a 登录信息手机号+密码
-&{APP_user_two}    userMobile=15911132177    userPassword=Abcd1234    # app用户b 登录信息手机号+密码
+&{uatEnvConfig}    baseUrlApp=http://bbs.51testing.com    addressUrlApp=http://bbs.51testing.com    # \ UAT环境
+&{APP_user_one}    name=wanghuiwan    password=111111    # 用户一号
+&{APP_user_two}    name=wanghuiwan    password=111111    # 用户二号
 &{uat_mysql}      user=root    password=123456    host=192.168.1.100    port=3306    # uat 数据库
-&{prod_mysql}      user=root    password=123456    host=192.168.1.100    port=3306    # prod 数据库
-${APP_user_data}    ${APP_user_one}    #选择APP登录用户，是否绑车
+&{prod_mysql}     user=root    password=123456    host=192.168.1.100    port=3306    # prod 数据库
+${APP_user_data}    ${APP_user_one}    #选择APP登录用户
 ${envSet}         ${uatEnvConfig}    #选择配置环境
 ${envDatabase}    ${uat_mysql}    #选择数据库配置环境
 

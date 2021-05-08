@@ -21,3 +21,10 @@ Resource          ../../../AppAutoConfigFiles/Resources_Config.robot
     Comment    Set Global Variable    ${mobile}    ${data.json()}[data][userInfo][mobile]
     #断言
     Comment    Should Be Equal    ${mobile}    ${APP_user_data}[userMobile]    登录后手机号不一致
+
+dosomething
+    FOR    ${index}    ${english_name}    ${chinese_name}    IN ENUMERATE    cat    猫    dog    狗
+        log    ${index}-${english_name}-${chinese_name}
+    END
+    ${random}    Evaluate    random.randint(0,sys.maxsize)    random,sys
+    log    ${random}

@@ -27,21 +27,21 @@ dosomething
 #        log    ${index}-${english_name}-${chinese_name}
 #    END
     ${random}    Evaluate    random.randint(0,sys.maxsize)    random,sys
-    log    ${random}    Comment    Should Be Equal    ${mobile}    ${APP_user_data}[userMobile]    登录后手机号不一致
+    log    ${random}
 
 dosomething2
 #    FOR    ${index}    ${english_name}    ${chinese_name}    IN ENUMERATE    cat    猫    dog    狗
 #        log    ${index}-${english_name}-${chinese_name}
 #    END
     ${random}    Evaluate    random.randint(0,sys.maxsize)    random,sys
-    log    ${random}    Comment    Should Be Equal    ${mobile}    ${APP_user_data}[userMobile]    登录后手机号不一致
+    log    ${random}
 
 dosomething3
 #    FOR    ${index}    ${english_name}    ${chinese_name}    IN ENUMERATE    cat    猫    dog    狗
 #        log    ${index}-${english_name}-${chinese_name}
 #    END
     ${random}    Evaluate    random.randint(0,sys.maxsize)    random,sys
-    log    ${random}    Comment    Should Be Equal    ${mobile}    ${APP_user_data}[userMobile]    登录后手机号不一致
+    log    ${random}
 
 dosomethingError
 #    FOR    ${index}    ${english_name}    ${chinese_name}    IN ENUMERATE    cat    猫    dog    狗
